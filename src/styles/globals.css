@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  background: rgb(181, 220, 237);
+}
+
+/* .carousel-container {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.carousel-container .carousel .slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+} */
+
+.carousel-container {
+  width: 100%; /* Adjust the width as needed */
+}
+
+.carousel-slide {
+  width: 100%; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+}
+
+/* .slide-content {
+  /* position: absolute; */
+/* bottom: 20px;
+  left: 20px; 
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.slide-content h3 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  color: #dbeafe;
+  text-shadow: -8px 2px 3px #172554;
+}
+
+.slide-content button {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* .slide-content .slide-caption {
+  font-size: 24px;
+  margin-bottom: 10px;
+} */
+
+.description {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.slide-image {
+  opacity: 0.7;
+}
