@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Carousel } from "react-responsive-carousel";
+import Footer from "./footer";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,12 +25,16 @@ const Header = () => {
       <div className='flex justify-between'>
         <Logo />
         <div className='flex items-center'>
-          <button className='px-4 py-2 bg-orange-400 text-white rounded'>
-            Register
-          </button>
-          <button className='px-4 py-2 bg-blue-500 text-white rounded ml-2'>
-            Login
-          </button>
+          <Link href='register'>
+            <button className='px-4 py-2 bg-orange-400 text-slate-900 rounded'>
+              Register
+            </button>
+          </Link>
+          <Link href='login'>
+            <button className='px-4 py-2 bg-cyan-300 text-slate-900 rounded ml-2'>
+              Login
+            </button>
+          </Link>
         </div>
       </div>
     </div>
@@ -40,19 +46,21 @@ const CarouselComponent = () => {
     {
       image: "PLV.jpg",
       caption: "WELCOME HOME, ALUMNI!",
-      text: "ALUMNI!",
+      text: "Come and join us!",
+      subtext: "Let's build an alumni legacy together.",
       description: "Your Alumni Community Awaits You",
     },
     {
       image: "carousel-img.jpg",
-      caption: "Slide 2",
+      caption: "Register and Update",
+      text: "Your Alumni Profile",
       buttonText: "Register",
       buttonLink: "https://example.com/register",
     },
     {
       image: "PLV.jpg",
       caption: "Slide 3",
-      buttonText: "Register",
+      buttonText: "Register Now",
       buttonLink: "https://example.com/register",
     },
   ];
@@ -64,6 +72,7 @@ const CarouselComponent = () => {
         showThumbs={false}
         onChange={onChange}
         onClickItem={onClickItem}
+        infiniteLoop={true}
       >
         {slides.map((slide, index) => (
           <div
@@ -80,6 +89,8 @@ const CarouselComponent = () => {
             <div className='slide-content'>
               <h3>{slide.caption}</h3>
               <p className='description'>{slide.description}</p>
+              <p className='text'>{slide.text}</p>
+              <p className='subtext'>{slide.subtext}</p>
               <button onClick={() => window.open(slide.buttonLink, "_blank")}>
                 {slide.buttonText}
               </button>
@@ -114,7 +125,7 @@ const Logo = () => {
         <span className='text-xl font-bold text-sky-100'>
           PAMANTASAN NG LUNGSOD NG VALENZUELA
         </span>
-        <span className='text-xl font-bold text-red-400'>
+        <span className='text-xl font-bold text-teal-300'>
           ALUMNI ASSOCIATION
         </span>
       </div>
@@ -153,7 +164,9 @@ const Logos = () => {
             alt={`Logo ${index + 1}`}
             className='h-30 w-30'
           />
-          <p className='text-center text-sm mt-1'>{logo.label}</p>
+          <p className='text-center text-sm mt-1 text-sky-50 font-semibold'>
+            {logo.label}
+          </p>
         </div>
       ))}
     </div>
@@ -162,7 +175,33 @@ const Logos = () => {
 
 const About = () => {
   return (
-    <h1 className='text-center text-xl text-blue-900 font-black'>ABOUT</h1>
+    <div className='flex items-center justify-center p-6'>
+      <div className='mr-4 flex-shrink-0'>
+        <img
+          src='osa-logo.jpg'
+          alt='Logo'
+          className='h-45 w-60 p-5 rounded-full'
+        />
+      </div>
+      <div className='text-center'>
+        <h3 className='text-xl font-bold mb-4'>
+          Plv-Office of Student Affairs
+        </h3>
+        <div className='text-justify ml-4 sm:text-left'>
+          <p className='text-md'>
+            The PLV-Office of Student Affairs (OSA) manages the students and
+            student organizations and it’s also promoting the social
+            consciousness and meaningful involvement of the university community
+            in various outreach projects. In addition, PLV-OSA is responding to
+            manage alumni relations wherein they are in charge of strengthening
+            the participation and alumni in various programs, events and
+            projects of the university. Also, the PLV-OSA is an office that
+            keeps the record of alumni. They are in charge of handling manual
+            alumni transactions on behalf of the institution.
+          </p>
+        </div>
+      </div>
+    </div>
   );
 };
 
@@ -176,6 +215,7 @@ export default function Home() {
         <Logos />
       </div>
       <About />
+      <Footer />
     </div>
   );
 }

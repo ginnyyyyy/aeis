@@ -18,6 +18,7 @@
 
 body {
   background: rgb(181, 220, 237);
+  width: auto;
 }
 
 /* .carousel-container {
@@ -63,16 +64,20 @@ body {
 }
 
 .slide-content h3 {
-  font-size: 50px;
-  margin-bottom: 10px;
+  font-size: 70px;
+  margin-bottom: 1px;
+  margin-top: 1.3em;
   font-weight: 900;
-  color: #dbeafe;
-  text-shadow: -8px 2px 3px #172554;
+  color: #1d4ed8;
+  text-shadow: -2.5px 2px 2px #121e47;
+  line-height: 1.1em;
 }
 
 .slide-content button {
   padding: 10px 20px;
   color: #fff;
+  background: #f97316;
+  border-radius: 50px;
   border: none;
   cursor: pointer;
 }
@@ -83,10 +88,73 @@ body {
 } */
 
 .description {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 800;
+  color: #172554;
+  text-shadow: -1px 1px 2px #06b6d4;
+  margin-bottom: 40px;
 }
 
 .slide-image {
   opacity: 0.7;
+}
+
+.text {
+  text-transform: uppercase;
+  color: #172554;
+  font-size: 20px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+.subtext {
+  text-transform: uppercase;
+  color: #172554;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+/* .custom-checkbox {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.custom-checkbox input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-checkbox .checkbox-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #000;
+  transition: background-color 0.3s ease;
+}
+
+.custom-checkbox input:checked + .checkbox-icon {
+  background-color: blue;
+} */
+
+.custom-box {
+  background-color: #d9d9d9; /* replace with your desired background color */
+}
+
+.dropdown-arrow {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 30px;
+  top: 42%;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
