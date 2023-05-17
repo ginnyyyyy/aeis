@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  background: rgb(181, 220, 237);
+  width: auto;
+}
+
+/* .carousel-container {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.carousel-container .carousel .slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+} */
+
+.carousel-container {
+  width: 100%; /* Adjust the width as needed */
+}
+
+.carousel-slide {
+  width: 100%; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+}
+
+/* .slide-content {
+  /* position: absolute; */
+/* bottom: 20px;
+  left: 20px; 
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.slide-content h3 {
+  font-size: 70px;
+  margin-bottom: 1px;
+  margin-top: 1.3em;
+  font-weight: 900;
+  color: #1d4ed8;
+  text-shadow: -2.5px 2px 2px #121e47;
+  line-height: 1.1em;
+}
+
+.slide-content button {
+  padding: 10px 20px;
+  color: #fff;
+  background: #f97316;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+/* .slide-content .slide-caption {
+  font-size: 24px;
+  margin-bottom: 10px;
+} */
+
+.description {
+  font-size: 30px;
+  font-weight: 800;
+  color: #172554;
+  text-shadow: -1px 1px 2px #06b6d4;
+  margin-bottom: 40px;
+}
+
+.slide-image {
+  opacity: 0.7;
+}
+
+.text {
+  text-transform: uppercase;
+  color: #172554;
+  font-size: 20px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+.subtext {
+  text-transform: uppercase;
+  color: #172554;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+/* .custom-checkbox {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.custom-checkbox input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-checkbox .checkbox-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #000;
+  transition: background-color 0.3s ease;
+}
+
+.custom-checkbox input:checked + .checkbox-icon {
+  background-color: blue;
+} */
+
+.custom-box {
+  background-color: #d9d9d9; /* replace with your desired background color */
+}
+
+.dropdown-arrow {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 30px;
+  top: 42%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
