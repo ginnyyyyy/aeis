@@ -30,7 +30,7 @@ const Footer = () => {
           <div className='ml-2'>
             <h1
               className='font-bold
-              text-amber-500 text-lg'
+              text-[#1E1E20] text-lg'
             >
               Address
             </h1>
@@ -46,10 +46,10 @@ const Footer = () => {
             alt='send'
             className='h-7 w-7'
           />
-          <div className='ml-2'>
+          <div className='ml-2 mt-4'>
             <h1
               className='font-bold
-              text-amber-500 text-lg'
+              text-[#1E1E20] text-lg'
             >
               Email Address
             </h1>
@@ -62,10 +62,10 @@ const Footer = () => {
             alt='time'
             className='h-7 w-7'
           />
-          <div className='ml-2'>
+          <div className='ml-2 mt-4'>
             <h1
               className='font-bold
-              text-amber-500 text-lg'
+              text-[#1E1E20] text-lg'
             >
               Office Hours
             </h1>

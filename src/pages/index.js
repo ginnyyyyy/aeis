@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Carousel } from "react-responsive-carousel";
 import Footer from "./footer";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-responsive-carousel/lib/styles/carousel.css";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,12 +26,12 @@ const Header = () => {
         <Logo />
         <div className='flex items-center'>
           <Link href='register'>
-            <button className='px-4 py-2 bg-orange-400 text-slate-900 rounded'>
+            <button className='px-4 py-2 bg-[#eef0f2] text-[#07070a] rounded hover:bg-[#4A525A] hover:text-[#EEF0F2] '>
               Register
             </button>
           </Link>
           <Link href='login'>
-            <button className='px-4 py-2 bg-cyan-300 text-slate-900 rounded ml-2'>
+            <button className='px-4 py-2 bg-[#004ba8] text-[#eef0f2] rounded ml-2 hover:bg-[#4A525A] hover:text-[#EEF0F2] '>
               Login
             </button>
           </Link>
@@ -122,7 +122,7 @@ const Logo = () => {
         />
       </div>
       <div className='flex flex-col'>
-        <span className='text-xl font-bold text-sky-100'>
+        <span className='text-xl font-bold text-[#eef0f2]'>
           PAMANTASAN NG LUNGSOD NG VALENZUELA
         </span>
         <span className='text-xl font-bold text-teal-300'>
@@ -135,7 +135,7 @@ const Logo = () => {
 
 const AlumniServices = () => {
   return (
-    <div className='text-center bg-blue-900 font-black text-blue-100 text-xl '>
+    <div className='text-center bg-blue-900 font-black text-[#EEF0F2] text-xl '>
       <h1>ALUMNI SERVICES</h1>
     </div>
   );
@@ -185,7 +185,7 @@ const About = () => {
       </div>
       <div className='text-center'>
         <h3 className='text-xl font-bold mb-4'>
-          Plv-Office of Student Affairs
+          PLV-Office of Student Affairs
         </h3>
         <div className='text-justify ml-4 sm:text-left'>
           <p className='text-md'>

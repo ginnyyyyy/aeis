@@ -44,7 +44,7 @@ const Box = () => {
         <div
           className='border-4 border-blue-300 rounded-3xl relative'
           style={{
-            backgroundColor: "#1e3a8a",
+            backgroundColor: "#004BA8",
           }}
         >
           <div className='p-6'>
@@ -125,7 +125,7 @@ const Box = () => {
             <div className='flex justify-end mt-5'>
               <Link href='register-form'>
                 <button
-                  className='rounded px-2 py-1.5 bg-gray-300 text-slate-800 text-sm'
+                  className='rounded px-2 py-1.5 bg-gray-300 text-slate-800 text-sm hover:bg-[#4A525A] hover:text-[#EEF0F2]'
                   onClick={handleNextClick}
                 >
                   Next
@@ -183,7 +183,7 @@ const Logo = () => {
         />
       </div>
       <div className='flex flex-col'>
-        <span className='text-xl font-bold text-sky-100'>
+        <span className='text-xl font-bold text-[#eef0f2]'>
           PAMANTASAN NG LUNGSOD NG VALENZUELA
         </span>
         <span className='text-xl font-bold text-teal-300'>

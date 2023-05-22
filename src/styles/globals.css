@@ -3,23 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary: #eef0f2;
+  --secondary: #5da9e9;
+  --font: #07070a;
+  --blue: #004ba8;
+  --other: #4a525a;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-} */
+}
 
-body {
+/* body {
   background: rgb(181, 220, 237);
   width: auto;
-}
+} */
 
 /* .carousel-container {
   max-width: 100%;
@@ -68,8 +70,8 @@ body {
   margin-bottom: 1px;
   margin-top: 1.3em;
   font-weight: 900;
-  color: #1d4ed8;
-  text-shadow: -2.5px 2px 2px #121e47;
+  color: #004ba8;
+  text-shadow: -2.5px 2px 2px #7399bf;
   line-height: 1.1em;
 }
 
@@ -90,8 +92,8 @@ body {
 .description {
   font-size: 30px;
   font-weight: 800;
-  color: #172554;
-  text-shadow: -1px 1px 2px #06b6d4;
+  color: #1e1e20;
+  text-shadow: -1px 1px 2px #eef0f2;
   margin-bottom: 40px;
 }
 
